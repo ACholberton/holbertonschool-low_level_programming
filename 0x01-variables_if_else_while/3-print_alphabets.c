@@ -9,6 +9,7 @@ int main(void)
 	char letter = 97;
 	char CAPS = 65;
 	char NL = 10;
+
 	while (letter < 123)
 	{
 		putchar(letter);

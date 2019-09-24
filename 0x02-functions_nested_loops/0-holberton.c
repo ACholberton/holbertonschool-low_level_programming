@@ -1,11 +1,17 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
- *main - Entry point
+ *main - entry point
  *
- *Return: always 0 (success)
+ *Return: in this case will be 0
  */
 int main(void)
 {
-	printf("Holberton\n");
-return (0);
+	char ch[9] = "Holberton";
+	int a;
+
+	for (a = 0; a < 9; a++)
+		_putchar(ch[a]);
+
+	_putchar('\n');
+	return (0);
 }

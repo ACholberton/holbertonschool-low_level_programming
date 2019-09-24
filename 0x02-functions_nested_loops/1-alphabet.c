@@ -1,4 +1,8 @@
 #include "holberton.h"
+/**
+ *print_alphabet - this function will print the alphabet
+ *Return: void
+ */
 void print_alphabet(void)
 {
 	char letter = 97;

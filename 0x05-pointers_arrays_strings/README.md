@@ -1,0 +1,1 @@
+#**This directory contains files for strings, arrays, and pointers in the C programming language*

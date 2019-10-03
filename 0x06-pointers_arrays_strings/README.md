@@ -1,0 +1,1 @@
+#This repository contains functions with arrays, pointers and strings

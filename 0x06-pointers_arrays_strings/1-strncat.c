@@ -20,6 +20,10 @@ char *_strncat(char *dest, char *src, int n)
 		{
 			n = destG + srcA;
 		}
+		else if (dest[destG] <= n && src [srcA] >= n)
+		{
+			n = destG + srcA;
+		}
 		else
 		dest[codeC + destG] = src[codeC];
 	}

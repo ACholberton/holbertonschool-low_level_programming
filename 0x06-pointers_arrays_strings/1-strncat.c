@@ -16,7 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 		;
 	for (codeC = 0; codeC < destG; codeC++)
 	{
-		if (dest[destG] > n && src[srcA] < n)
+		if (dest[destG] >= n && src[srcA] <= n)
 		{
 			n = destG + srcA;
 		}

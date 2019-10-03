@@ -16,8 +16,10 @@ char *_strncat(char *dest, char *src, int n)
 		;
 	for (c = 0; c < g; c++)
 	{
-		if (dest[g] > n)
-			n = g + 1;
+		if (dest[g] > n && src[a] < a)
+		{
+			n = g + a;
+		}
 		else
 		dest[c + g] = src[c];
 	}

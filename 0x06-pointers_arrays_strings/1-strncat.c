@@ -8,24 +8,24 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int srcA, codeC, destG;
+	int lengthS, codeC, lengthD;
 
-	for (srcA = 0; src[srcA] != '\0'; srcA++)
+	for (lengthS = 0; src[lengthS] != '\0'; lengthS++)
 		;
-	for (destG = 0; dest[destG] != '\0'; destG++)
+	for (lengthD = 0; dest[lengthD] != '\0'; lengthD++)
 		;
-	for (codeC = 0; codeC < destG; codeC++)
+	for (codeC = 0; codeC < lengthD; codeC++)
 	{
-		if (dest[destG] >= n && src[srcA] <= n)
+		if (dest[lengthD] >= n && src[lengthS] <= n)
 		{
-			n = destG + srcA;
+			n = lengthD + lengthS;
 		}
-		else if (dest[destG] <= n && src[srcA] >= n)
+		else if (dest[lengthD] <= n && src[lengthS] >= n)
 		{
-			n = destG + srcA;
+			n = lengthD + lengthS;
 		}
 		else
-		dest[codeC + destG] = src[codeC];
+		dest[codeC + lengthD] = src[codeC];
 	}
 	return (dest);
 }

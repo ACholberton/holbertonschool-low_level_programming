@@ -8,20 +8,20 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int a, c, g;
+	int srcA, codeC, destG;
 
-	for (a = 0; src[a] != '\0'; a++)
+	for (srcA = 0; src[srcA] != '\0'; srcA++)
 		;
-	for (g = 0; dest[g] != '\0'; g++)
+	for (destG = 0; dest[destG] != '\0'; destG++)
 		;
-	for (c = 0; c < g; c++)
+	for (codeC = 0; codeC < destG; codeC++)
 	{
-		if (dest[g] > n && src[a] < a)
+		if (dest[destG] > n && src[srcA] < n)
 		{
-			n = g + a;
+			n = destG + srcA;
 		}
 		else
-		dest[c + g] = src[c];
+		dest[codeC + destG] = src[codeC];
 	}
 	return (dest);
 }

@@ -9,7 +9,12 @@ char *cap_string(char *UPPER)
 	int a, b;
 char separators[] = {',', ';', '.', '!', '?', '\"', '(', ')',
 		     '{', '}', ' ', '\t', '\n'};
+a = 0;
 
+if (UPPER[a] >= 97 && UPPER[a] <= 123)
+{
+	UPPER[a] = UPPER[a] -32;
+}
 		for (a = 0; UPPER[a] != '\0'; a++)
 		{
 			for (b = 0; separators[b] != '\0'; b++)

@@ -7,22 +7,20 @@
 char *cap_string(char* UPPER)
 {
 	int a, b;
-	char separators;
+	char separators[] = {',', ';', '.', '!', '?', '\"', '(', ')', '{', '}', ' ', '\t', '\n'};
 
-	separators = {',', ';', '.', '!', '?', '\"', '(', ')', '{', '}', '\n'};
-
-	for (a = 0; UPPER[a] !='\0'; a++)
-	{
-		for (b = 0; separators[b] != '\0'; b++)
+		for (a = 0; UPPER[a] != '\0'; a++)
 		{
-			if (separators[b] == UPPER[a])
+			for (b = 0; separators[b] != '\0'; b++)
 			{
-				if (UPPER[a + 1] >= 65 && UPPER[a + 1] <= 90)
+				if (separators[b] == UPPER[a])
 				{
-					UPPER[a] = UPPER[a] - 32;
+			   		if (UPPER[a + 1] >= 97 && UPPER[a + 1] <= 123)
+					{
+					 UPPER[a + 1] = UPPER[a + 1] - 32;
+					}
 				}
 			}
 		}
-	}
-	return (UPPER);
+		return (UPPER);
 }

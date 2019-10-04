@@ -13,7 +13,7 @@ a = 0;
 
 if (UPPER[a] >= 97 && UPPER[a] <= 123)
 {
-	UPPER[a] = UPPER[a] -32;
+	UPPER[a] = UPPER[a] - 32;
 }
 		for (a = 0; UPPER[a] != '\0'; a++)
 		{

@@ -1,0 +1,28 @@
+#include "holberton.h"
+/**
+ *cap_string - this function will capitalize all words of a string
+ *@UPPER: is a string
+ *Return: String
+ */
+char *cap_string(char* UPPER)
+{
+	int a, b;
+	char separators;
+
+	separators = {',', ';', '.', '!', '?', '\"', '(', ')', '{', '}', '\n'};
+
+	for (a = 0; UPPER[a] !='\0'; a++)
+	{
+		for (b = 0; separators[b] != '\0'; b++)
+		{
+			if (separators[b] == UPPER[a])
+			{
+				if (UPPER[a + 1] >= 65 && UPPER[a + 1] <= 90)
+				{
+					UPPER[a] = UPPER[a] - 32;
+				}
+			}
+		}
+	}
+	return (UPPER);
+}

@@ -4,10 +4,11 @@
  *@UPPER: is a string
  *Return: String
  */
-char *cap_string(char* UPPER)
+char *cap_string(char *UPPER)
 {
 	int a, b;
-	char separators[] = {',', ';', '.', '!', '?', '\"', '(', ')', '{', '}', ' ', '\t', '\n'};
+char separators[] = {',', ';', '.', '!', '?', '\"', '(', ')',
+		     '{', '}', ' ', '\t', '\n'};
 
 		for (a = 0; UPPER[a] != '\0'; a++)
 		{
@@ -15,9 +16,9 @@ char *cap_string(char* UPPER)
 			{
 				if (separators[b] == UPPER[a])
 				{
-			   		if (UPPER[a + 1] >= 97 && UPPER[a + 1] <= 123)
+					if (UPPER[a + 1] >= 97 && UPPER[a + 1] <= 123)
 					{
-					 UPPER[a + 1] = UPPER[a + 1] - 32;
+						UPPER[a + 1] = UPPER[a + 1] - 32;
 					}
 				}
 			}

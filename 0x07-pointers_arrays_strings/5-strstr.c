@@ -30,22 +30,22 @@ int _strcmp(char *s1, char *s2)
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int a, b;
+	int a;
 
 	if (!needle)
 		return (haystack);
 
-	for (a = 0; haystack[a] != '\0'; a++)
+	while (*haystack)
 	{
-		for (b = 0; needle[b] != '\0'; b++)
+		if (_strcmp(haystack, needle) == 1)
 		{
-			if (_strcmp(haystack, needle) == 1)
-			{
-				return (haystack);
-			}
-			else
-				haystack++;
+			return (haystack);
 		}
+		else
+		{
+			haystack++;
+		}
+		a++;
 	}
 	return ('\0');
 }

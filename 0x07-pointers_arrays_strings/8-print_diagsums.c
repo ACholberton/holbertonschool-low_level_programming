@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- *print_diagrams - prints the sum of two diagonals of a suare matrix of integers
+ *print_diagsums - prints the sum of two diagonal square matrix of integers
  *@a: is a string
  *@size: is a integer
  *Return: always 0

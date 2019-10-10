@@ -2,6 +2,7 @@
 /**
  *is_prime_helper - is a helper function
  *@i: is a variable
+ *@n: is a variable
  *Return: helper
  */
 int is_prime_helper(int n, int i)

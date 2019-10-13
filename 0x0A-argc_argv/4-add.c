@@ -7,26 +7,24 @@
  *@argv: is an array of characters
  *Return: 0
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int A1, B1, Result;
+	int i = 0, a = 0, Result = 0;
+	char *number = argv[i];
 
-	if (argc != 3)
+	if (argc < 1)
 	{
 		printf("0\n");
-		return (0);
 	}
-	else if (*argv)
+	for (; i < argc; i++)
 	{
-		A1 = atoi(argv[1]);
-		B1 = atoi(argv[2]);
-		Result = A1 + B1;
-		printf("%d\n", Result);
-		return (0);
+		for (; number[a] >= '0' && number[a] <= '9'; a++)
+		{
+			printf("Error\n");
+			return (0);
+		}
+		Result += atoi(argv[i]);
 	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
+	printf("%d\n", Result);
+	return (0);
 }

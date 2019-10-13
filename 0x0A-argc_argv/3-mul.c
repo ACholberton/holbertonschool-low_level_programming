@@ -11,15 +11,14 @@ int main(int argc __attribute__((unused)), char *argv[])
 {
 	int A1, B1, Result;
 
+	if (argc != 3)
+		printf("Error\n");
+	return (1);
+
 	A1 = atoi(argv[1]);
 	B1 = atoi(argv[2]);
+	Result = A1 * B1;
+	printf("%d\n", Result);
 
-	if (*argv)
-	{
-		Result = A1 * B1;
-		printf("%d\n", Result);
-	}
-	else
-		printf("Error");
-	return (0);
+		return (0);
 }

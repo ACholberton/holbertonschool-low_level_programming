@@ -1,0 +1,1 @@
+#** This directory contains files fro memory allocation**

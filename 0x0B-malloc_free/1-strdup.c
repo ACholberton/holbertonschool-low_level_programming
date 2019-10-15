@@ -42,10 +42,10 @@ int _strlen(char *s)
 	return (l);
 }
 /**
-_strdup - will return a pointer to a newly allocated space in memory
-*@str: is a string
-*Return: a pointer
-*/
+ *_strdup - will return a pointer to a newly allocated space in memory
+ *@str: is a string
+ *Return: a pointer
+ */
 char *_strdup(char *str)
 {
 	char *point;
@@ -57,7 +57,7 @@ char *_strdup(char *str)
 
 	point = malloc(_strlen(str) + 1);
 
-	if(point == '\0')
+	if (point == '\0')
 	{
 		return ('\0');
 	}

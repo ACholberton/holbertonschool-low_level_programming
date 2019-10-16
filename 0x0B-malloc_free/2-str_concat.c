@@ -47,14 +47,14 @@ char *str_concat(char *s1, char *s2)
 		return ('\0');
 	}
 
-	for (x = 0; s1[x]; x++)
+	for (x = 0; x < s1length; x++)
 	{
 		point[x] = s1[x];
 	}
-	for (y = 0; s2[y]; y++)
+	for (y = 0; y < s2length; y++)
 	{
-		point[x] = s2[y];
+		point[x + y] = s2[y];
 	}
-	point[x] = '\0';
+	point[x + y] = '\0';
 	return (point);
 }

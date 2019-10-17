@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (n >= length2)
 	{
-		n = length2[s2];
+		n = length2;
 	}
 
 	NEWL = length1 + length2;

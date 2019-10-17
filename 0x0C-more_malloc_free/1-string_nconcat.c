@@ -45,7 +45,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = length2;
 	}
 
-	NEWL = length1 + length2;
+	NEWL = length1 + n;
 
 	point = malloc((sizeof(char) * (NEWL + 1)));
 

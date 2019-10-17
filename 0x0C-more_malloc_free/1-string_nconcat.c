@@ -53,7 +53,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (a = 0; a < length1; a++)
+	for (a = 0; s1[a] != '\0'; a++)
 	{
 		point[a] = s1[a];
 	}

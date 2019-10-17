@@ -61,6 +61,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		point[a + b] = s2[b];
 	}
-	point[a + n] = '\0';
+	point[a + length1] = '\0';
 	return (point);
 }

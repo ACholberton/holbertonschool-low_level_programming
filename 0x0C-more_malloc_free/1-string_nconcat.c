@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	point = (char *)malloc((sizeof(char) * (NEWL + 1)));
 
-	if (point == '\0')
+	if (point == NULL)
 	{
 		return (NULL);
 	}

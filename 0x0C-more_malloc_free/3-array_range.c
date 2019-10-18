@@ -9,28 +9,23 @@
  */
 int *array_range(int min, int max)
 {
-	int *point;
 	int count, a;
-
-	point = NULL;
+	int *point;
 
 	if (min > max)
-	{
 		return (NULL);
-	}
 
-	count = (max - min) + 1;
+	count = max - min;
 
-	point = malloc(sizeof(int) * count);
+	point = malloc(sizeof(int) * (count + 1));
 
 	if (point == NULL)
-	{
 		return (NULL);
-	}
-	for (a = 0; a < count; a++)
+
+	for (a = 0; a < count + 1; a++)
 	{
-		min++;
-		point[a] = min;
+		point[a] = (min + a);
 	}
+
 	return (point);
 }

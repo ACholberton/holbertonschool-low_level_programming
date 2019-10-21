@@ -1,0 +1,1 @@
+**This directory contaions files using structures**

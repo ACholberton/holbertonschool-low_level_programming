@@ -2,9 +2,10 @@
 #include <stdio.h>
 /**
  *main - entry point
- *Return 0
+ *@void:  nothing here
+ *Return: 0
  */
-int main (void)
+int main(void)
 {
 	printf("%s\n", __FILE__);
 	return (0);

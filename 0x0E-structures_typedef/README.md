@@ -1,1 +1,0 @@
-**This directory constains file with structures**

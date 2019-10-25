@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "3-calc.h"
 /**
- *get_op_func - will selects the correct function to perform the operation asked
+ *get_op_func - will selects the correct function to perform the operation
  *@s: is the parameter entered by the user
  *Return: somthing?
  */

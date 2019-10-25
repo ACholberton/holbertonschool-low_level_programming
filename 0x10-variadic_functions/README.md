@@ -1,0 +1,1 @@
+**This directory contains files written in C language using variadic functions**

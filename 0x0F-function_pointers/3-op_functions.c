@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "3-calc.h"
 /**
  *op_add -  will make a sum
  *@a: is an integer
@@ -26,7 +27,7 @@ int op_sub(int a, int b)
  *@b: is an integer
  *Return: multiplication
  */
-int op_mul(int a, int b);
+int op_mul(int a, int b)
 {
 	return (a * b);
 }

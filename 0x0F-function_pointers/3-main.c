@@ -5,7 +5,7 @@
  *main - entry point
  *@argc: is an integer
  *@argv: is an array of characters
- *Return:
+ *Return: 0
  */
 int main(int argc, char *argv[])
 {

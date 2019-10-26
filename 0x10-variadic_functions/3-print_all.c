@@ -4,8 +4,7 @@
 #include <stdarg.h>
 /**
  *print_all - will print anything
- *@:
- *@:
+ *@format: is the format  of whats going to be printed
  *Return: void
  */
 void print_all(const char * const format, ...)
@@ -19,7 +18,7 @@ void print_all(const char * const format, ...)
 		b++;
 	while (format[a])
 	{
-		switch(format[a])
+		switch (format[a])
 		{
 		case 'c':
 			printf("%c", (char)va_arg(holder, int));
@@ -36,9 +35,9 @@ void print_all(const char * const format, ...)
 				printf("(nil)");
 				break;
 			}
-				printf("%s", va_arg(holder,char *));
+				printf("%s", va_arg(holder, char *));
 				break;
-			}
+		}
 		if ((a != b - 1) && (format[a] == 'c' ||
 					     format[a] == 'i' ||
 					     format[a] == 'f' ||

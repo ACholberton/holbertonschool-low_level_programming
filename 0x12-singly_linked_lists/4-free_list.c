@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
  *free_list - will free up the list
  *@head: is what is being freed
@@ -10,16 +8,9 @@ void free_list(list_t *head)
 {
 	list_t *a;
 
-	a = head;
-
-	if (head == NULL)
-	{
-		return;
-	}
-	while (head != NULL)
+	for (a = head; a != NULL; a = a->next)
 	{
 		free(a->str);
-		a = a->next;
 		free(a);
 	}
 }

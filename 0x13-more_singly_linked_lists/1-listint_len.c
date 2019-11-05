@@ -11,10 +11,6 @@ size_t listint_len(const listint_t *h)
 {
 	size_t a;
 
-	if (h == NULL)
-	{
-		exit(98);
-	}
 	while (h != NULL)
 	{
 		a++;

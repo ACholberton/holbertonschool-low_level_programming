@@ -1,7 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 /**
  *add_nodeint - will add a node to the beginning of a list
  *@head: is the beginning of the list
@@ -17,11 +16,6 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	{
 		return (NULL);
 	}
-	if (*head == NULL)
-	{
-		return (NULL);
-	}
-	printf("%d\n", n);
 	NN->next = *head;
 	*head = NN;
 	NN->n = n;

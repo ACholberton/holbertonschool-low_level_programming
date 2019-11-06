@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *delete_node_at_index - will delete a node at index of index
+ *delete_nodeint_at_index - will delete a node at index of index
  *@head: pointer
  *@index: is the index of the node that should be deleted
  *Return: 1 if it succeeded, -1 if it failed

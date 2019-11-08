@@ -2,7 +2,7 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- *pow - will elevate a number to the power of n
+ *_pow - will elevate a number to the power of n
  *@base: is the number to be elevated
  *@n: is the amount of times the multiplication is gonna happen
  *Return: the final product
@@ -23,14 +23,12 @@ int _pow(unsigned int base, unsigned int n)
 	return (p);
 }
 /**
- *binary_to_unit - function that converts a binary number to an unsigned int
+ *binary_to_uint - function that converts a binary number to an unsigned int
  *@b: is the number to be converted
- *Return: the converted number, or 0 if there is one or more chars in the string
- * b that is not 0 and 1.
- *b is null
+ *Return: the converted number
  */
 unsigned int binary_to_uint(const char *b)
-  {
+{
 	unsigned int count;
 	unsigned int i = 0;
 	unsigned int decimal = 0;
@@ -39,7 +37,6 @@ unsigned int binary_to_uint(const char *b)
 	{
 		return (0);
 	}
-
 	while (b[i] != '\0')
 	{
 		if (b[i] != 48 && b[i] != 49)

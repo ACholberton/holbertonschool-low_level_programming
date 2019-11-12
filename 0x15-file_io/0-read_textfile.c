@@ -25,8 +25,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	counter = read(file, buffer, letters);
-
-	writer = write(1, buffer, letters);
+	if (counter < 0)
+	{
+		return (0);
+	}
+	writer = write(1, buffer, counter);
 	if (writer < 0)
 	{
 		return (0);

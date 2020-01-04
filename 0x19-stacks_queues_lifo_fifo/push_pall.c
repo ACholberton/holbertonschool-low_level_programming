@@ -7,9 +7,9 @@
  *Return: the new added element.
  */
 
-int push(int element, char **position)
+int push(int element, stack_t **position)
 {
-	char *new;
+	stack_t *new;
 
 	if (element == NULL || element == "")
 	{

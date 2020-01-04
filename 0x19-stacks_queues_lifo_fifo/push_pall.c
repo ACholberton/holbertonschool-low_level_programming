@@ -26,8 +26,10 @@ int push(int element, char **position)
 		*position = new;
 		return (*position);
 	}
-
-
+	new->next = *position;
+	(*position)->prev = new;
+	*position = new;
+	return (*position);
 }
 /**
  *pop - prints all the values on the stack.
@@ -37,12 +39,14 @@ int push(int element, char **position)
 size_t pall(const int list)
 {
 	unsigned int elements = 0;
-	const  int node = list;
+	const  int stack = list;
 
-	while (node)
+	if (stack == "")
+		return (0);
+	while (stack)
 	{
 		printf("%d\n", node->list);
-		node = node->next;
+		stack = stack->next;
 		elements++;
 	}
 	return (elements);

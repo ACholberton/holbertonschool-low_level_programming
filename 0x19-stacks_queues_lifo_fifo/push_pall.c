@@ -36,10 +36,10 @@ int push(int element, stack_t **position)
  *@list: is the stack to be printed
  *Return: the elements of the stack.
  */
-size_t pall(const int list)
+stack_t pall(const int list)
 {
 	unsigned int elements = 0;
-	const  int stack = list;
+	const int stack = list;
 
 	if (stack == "")
 		return (0);

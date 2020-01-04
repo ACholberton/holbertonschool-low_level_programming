@@ -16,7 +16,7 @@ int push(int element, stack_t **position)
 		prinf("L<line_number>: usage: push integer");
 		exit(EXIT_FAILURE);
 	}
-	new = malloc(sizeof(char));
+	new = malloc(sizeof(stack_t));
 	if (new == NULL)
 		return (NULL);
 	new->element = element;

@@ -47,7 +47,7 @@ int binary_search(int *array, size_t size, int value)
 
 void print_list(int *array, size_t size, size_t index_l)
 {
-	unsigned int index;
+	unsigned int index = 0;
 
 	printf("Searching in array: ");
 	for (index = index_l; index < size; index++)

@@ -21,7 +21,7 @@ int binary_search(int *array, size_t size, int value)
 
 	while (index_l <= index_r)
 	{
-		printf("Searching in array: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9\n");
+		print_list(array, index_r + 1, index_l);
 		mid = ((index_l + index_r) / 2);
 		if (array[mid] < value)
 		{
@@ -35,4 +35,29 @@ int binary_search(int *array, size_t size, int value)
 			return (mid);
 	}
 	return (-1);
+}
+
+/**
+ *print_list - prints the integer array
+ *@array: is the array of integers
+ *@size: is the size of the array
+ *@index_l: is the start of the array
+ *Return: nothing.
+ */
+
+void print_list(int *array, size_t size, size_t index_l)
+{
+	unsigned int index;
+
+	printf("Searching in array: ");
+	for (index = index_l; index < size; index++)
+	{
+		if (index + 1 != size)
+		{
+			printf("%i, ", array[index]);
+		}
+		else
+			printf("%i ", array[index]);
+	}
+	printf("\n");
 }

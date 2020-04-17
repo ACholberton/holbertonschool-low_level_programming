@@ -20,7 +20,7 @@ void print_list(int *array, size_t index_r, size_t index_l)
 			printf("%i, ", array[index]);
 		}
 		else
-			printf("%i ", array[index]);
+			printf("%i", array[index]);
 	}
 	printf("\n");
 }

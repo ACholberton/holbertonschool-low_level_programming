@@ -8,14 +8,14 @@
  *Return: nothing.
  */
 
-void print_list(int *array, size_t size, size_t index_l)
+void print_list(int *array, size_t index_r, size_t index_l)
 {
 	unsigned int index = 0;
 
 	printf("Searching in array: ");
-	for (index = index_l; index < size; index++)
+	for (index = index_l; index < index_r; index++)
 	{
-		if (index + 1 != size)
+		if (index + 1 != index_r)
 		{
 			printf("%i, ", array[index]);
 		}

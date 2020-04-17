@@ -3,7 +3,7 @@
 /**
  *print_list - prints the integer array
  *@array: is the array of integers
- *@size: is the size of the array
+ *@index_r: is the end of the array
  *@index_l: is the start of the array
  *Return: nothing.
  */
